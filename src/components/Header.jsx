@@ -9,7 +9,9 @@ export const Header = () => {
   console.log(user);
   return (
     <header>
-      <h1>My App</h1>
+      <Link to="/">
+        <h1>My App</h1>
+      </Link>
       <nav>
         {!isAuthenticated && <LoginButton />}
 
@@ -17,10 +19,14 @@ export const Header = () => {
           <div>
             {' '}
             <LogoutButton />
-            <Link to="/user" className='header__button'>User</Link>
+            <Link to="/user" className="header__button">
+              User
+            </Link>
           </div>
         )}
-        <Link to="/article" className='header__button'>Article</Link>
+        <Link to="/article" className="header__button">
+          Article
+        </Link>
       </nav>
     </header>
   );
