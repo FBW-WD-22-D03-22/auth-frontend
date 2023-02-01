@@ -1,16 +1,14 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react';
-import { useEffect } from 'react';
 
 export const User = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
 
-  if (isLoading) {
-    return <div>Loading ...</div>;
+  const user = {
+    name: 'John Doe',
+    email: 'doe@mail.com',
+    picture : "https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
   }
 
   return (
-    isAuthenticated && (
       <div className="user">
         <div className="user__card">
           <img src={user.picture} alt={user.name} />
@@ -19,5 +17,4 @@ export const User = () => {
         </div>
       </div>
     )
-  );
 };
