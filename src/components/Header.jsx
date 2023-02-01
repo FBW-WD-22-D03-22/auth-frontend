@@ -10,6 +10,13 @@ export const Header = () => {
         <Link to="/user" className="header__button">
           User
         </Link>
+          <div>
+            {' '}
+            <LogoutButton />
+            <Link to="/user" className="header__button">
+              User
+            </Link>
+          </div>
         <Link to="/article" className="header__button">
           Article
         </Link>
