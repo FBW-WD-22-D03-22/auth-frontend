@@ -1,0 +1,29 @@
+@use '../utilities/colors.scss' as *;
+@use '../utilities/boxes.scss' as *;
+@use '../utilities/font-sizes.scss' as *;
+
+header {
+  background-color: $bgColorLight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5vh 5vw;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button,
+  .header__button {
+    background-color: white;
+    border: none;
+    padding: $boxPadding;
+    margin: $boxMargin;
+    border-radius: $boxRadius;
+    max-width: fit-content;
+    color: $mainColor;
+    font-size: $smallFont;
+  }
+}

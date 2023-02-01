@@ -1,0 +1,29 @@
+@use '../utilities/boxes.scss' as *;
+@use '../utilities/colors.scss' as *;
+.user {
+  display: grid;
+  place-items: center;
+  &__card {
+    margin: 0 auto;
+    padding: 3vh 2vw 1vh;
+    border: $boxBorder;
+    border-radius: $boxRadius;
+    width: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      height: 150px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 3.5vh;
+    }
+  }
+  &__card-text * {
+    text-align: center;
+  }
+}

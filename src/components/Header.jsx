@@ -5,20 +5,23 @@ import { LogoutButton } from './LogoutButton';
 
 export const Header = () => {
   const { isAuthenticated, user } = useAuth0();
-  
+
   console.log(user);
   return (
-    <div className="header">
-      {!isAuthenticated && <LoginButton />}
+    <header>
+      <h1>My App</h1>
+      <nav>
+        {!isAuthenticated && <LoginButton />}
 
-      {isAuthenticated && (
-        <>
-          {' '}
-          <LogoutButton />
-          <Link to="/user">User</Link>
-        </>
-      )}
-      <Link to="/article">Article</Link>
-    </div>
+        {isAuthenticated && (
+          <div>
+            {' '}
+            <LogoutButton />
+            <Link to="/user" className='header__button'>User</Link>
+          </div>
+        )}
+        <Link to="/article" className='header__button'>Article</Link>
+      </nav>
+    </header>
   );
 };

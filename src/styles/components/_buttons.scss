@@ -1,0 +1,12 @@
+@use '../utilities/colors.scss' as *;
+@use '../utilities/boxes.scss' as *;
+
+button {
+  background-color: $bgColorDark;
+  border: none;
+  padding: $boxPadding;
+  margin: $boxMargin;
+  border-radius: $boxRadius;
+  max-width: fit-content;
+  margin: 2em auto;
+}

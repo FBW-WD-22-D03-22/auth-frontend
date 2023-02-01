@@ -1,0 +1,15 @@
+@use '../utilities/colors' as *;
+@use '../utilities/font-sizes' as *;
+
+footer {
+  background-color: $bgColorDark;
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1vh 5vw;
+  p {
+    color: $mainColorLight;
+    font-size: $smallFont;
+  }
+}

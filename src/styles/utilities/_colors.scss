@@ -1,0 +1,17 @@
+$hue: 9;
+$compHue: 129;
+
+$med: 50%;
+$light: 85%;
+$dark: 40%;
+$sat: 65%;
+$muted: 25%;
+$null: 0%;
+
+$mainColor: hsl($hue $med $med);
+$mainColorLight: hsl($hue $med $light);
+$compColor: hsl($compHue $med $med);
+$compColorLight: hsl($compHue $med $light);
+$bgColor: hsl($hue $muted $med);
+$bgColorLight: hsl($hue $null $light);
+$bgColorDark: hsl($hue $muted $dark);

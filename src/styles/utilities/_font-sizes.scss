@@ -1,0 +1,6 @@
+$baseSize: 1.6rem;
+$sizeProportion: 1.6;
+$smallFont: calc($baseSize / $sizeProportion);
+$mediumFont: $baseSize;
+$largeFont: $baseSize * $sizeProportion;
+$extraLargeFont: $largeFont * $sizeProportion;
